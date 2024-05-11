@@ -104,10 +104,11 @@ module.exports = function (devMode, hot) {
                   loader: "css-loader",
                   options: {
                     sourceMap: true,
-                    modules: true,
-                    camelCase: true,
-                    localIdentName: "tm-[name]__[local]",
-                    importLoaders: 2
+                    localsConvention: "camelCase",
+                    importLoaders: 2,
+                    modules: {
+                      localIdentName: "tm-[name]__[local]",
+                    }
                   }
                 },
                 {
@@ -124,10 +125,11 @@ module.exports = function (devMode, hot) {
                   loader: "css-loader",
                   options: {
                     sourceMap: true,
-                    modules: true,
-                    camelCase: true,
-                    localIdentName: "tm-[name]__[local]",
-                    importLoaders: 2
+                    localsConvention: "camelCase",
+                    importLoaders: 2,
+                    modules: {
+                      localIdentName: "tm-[name]__[local]",
+                    }
                   }
                 },
                 {
